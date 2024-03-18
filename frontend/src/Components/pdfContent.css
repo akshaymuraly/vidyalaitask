@@ -1,0 +1,44 @@
+.pdf-container{
+    /* width: 600px; */
+    max-width: 90vw;
+    height: auto;
+    overflow-x: scroll;
+    display: flex;
+    gap: 10px;
+    background-color: #eaeef3c7;
+    box-shadow: 0px 0px 4px -1px #7e7777;
+    padding: 5px;
+}
+.pdf-container::-webkit-scrollbar{
+    scroll-behavior: smooth;
+    width: 12px;
+    border-radius: 10px;
+}
+.page-container{
+    position: relative;
+    cursor: pointer;
+}
+.pagenumber-check-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    background-color: rgb(241, 227, 227);
+    z-index: 1;
+    height: 20px;
+    width: 20px;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+}
+.pagenumber-check-box-checked{
+    background-color: lime;
+}
+.page-checkbox{
+    display: none;
+}
+.drag-over{
+    background-color: rgba(82, 203, 239, 0.378);
+    color: white;
+}

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Poppins&display=swap');
+
+.uploadpdf-container{
+    height: auto;
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+}
+.uploadpdf-btn{
+    background-color:#e0f7fa;
+    height: 100px;
+    width: 300px;
+    border-radius: 10px;
+    border: 2px dashed #64b5f6b5;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: rgb(52, 20, 81);
+}
+.uploadpdf-btn:hover{
+    background-color:#d3f2f6;
+}
+.pdf-generator-btn-container{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.create-pdf-btn{
+    background-color: rgb(219, 29, 76);
+    color: white;
+    /* text-align: center;
+     */
+     font-family: Poppins,'sans-serif';
+     font-weight: 400;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    border: none;
+    width: 181px;
+    height: 39px;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px -1px gray;
+    /* margin-bottom: 30px; */
+    transition: transform 0.35s ease-in;
+    cursor: pointer;
+}
+.create-pdf-btn:hover{
+    transform:translateY(-5px);
+    background-color:rgba(245, 12, 70, 0.971);
+}
+.create-pdf-btn-logo {
+    transition: transform 0.45s ease;
+    /* Add a transition for a smooth effect */
+}
+.create-pdf-btn:hover .create-pdf-btn-logo{
+transform: rotate(180deg);
+}
+.download-link{
+    text-decoration: none;
+    color: rgba(245, 12, 70, 0.971);
+    height: 45px;
+    width: 45px;
+}
+.download-link:hover .download-link-icon{
+    color: rgb(106, 164, 236);
+}
+.download-link-icon{
+    height: 100%;
+    width: 100%;
+    transition: color 0.35s ease-in;
+}
+.rotate{
+    animation: rotate infinite ease;
+}
+
+/* -----------------------ANIMATION ---------------*/
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
